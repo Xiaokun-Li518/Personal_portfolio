@@ -74,7 +74,7 @@ function App() {
           <Intro />
           <Stack sx={{flexDirection:{sx:'column', md:'row'}}} className="grid grid-cols-3 gap-20">
 
-            <Box sx={{borderRight: '1px solid #D3D3D3', px: {sx: 0, md: 2}}} className="col-span-1 pr-10">
+            <Box sx={{ px: {sx: 0, md: 2}}} className="col-span-1 pr-10">
               <TechnicalSkills />
               <Hobbies />
             </Box>

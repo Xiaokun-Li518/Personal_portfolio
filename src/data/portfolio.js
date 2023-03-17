@@ -20,7 +20,7 @@ export default [
     {
         title: 'My Portfolio',
         imgUrl:'/assets/Portfolio.png',
-        stack: ['HTML', 'Tailwind CSS', 'JavaScript', 'React'],
-        link: 'https://keyu-2aiwey7ka-xiaokun-li518.vercel.app'
+        stack: ['HTML', 'Tailwind CSS', 'JavaScript', 'React', 'MaterialUI'],
+        link: 'https://personal-portfolio-nu-lyart.vercel.app/'
     },
 ]
