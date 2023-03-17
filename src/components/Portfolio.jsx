@@ -1,3 +1,4 @@
+import { Stack } from '@mui/material';
 import React from 'react';
 import portfolio from '../data/portfolio';
 import {PortfolioItem, Title} from './';
@@ -13,7 +14,7 @@ return (
     <div className="flex flex-col items-left">
         <Title svg={svg} title={'Projects'} />
         <div className="flex flex-col md:flex-row items-left">
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+         <Stack direction="row" flexWrap="wrap" justifyContent="start" alignItems="start" gap={2} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {portfolio.map(project => (
                <PortfolioItem 
                   imgUrl={project.imgUrl}
@@ -22,7 +23,7 @@ return (
                   link={project.link}
                />
             ))}
-         </div>
+         </Stack>
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Timeline, Intro, Contact, Footer, Portfolio, TechnicalSkills, Hobbies } from './components';
+import { Box, Stack, Typography } from '@mui/material'
 
 
 function App() {
@@ -71,17 +72,20 @@ function App() {
       <div className="flex flex-col items-center justify-center my-20 px-20 min-h-screen font-inter w-11/12 mx-auto">
         <div>
           <Intro />
-          <div className="grid grid-cols-3 gap-20">
-            <div className="col-span-1 border-r border-stone-900 pr-10">
+          <Stack sx={{flexDirection:{sx:'column', md:'row'}}} className="grid grid-cols-3 gap-20">
+
+            <Box sx={{borderRight: '1px solid #D3D3D3', px: {sx: 0, md: 2}}} className="col-span-1 pr-10">
               <TechnicalSkills />
               <Hobbies />
-            </div>
-            <div className="col-span-2">
+            </Box>
+
+            <Box className="col-span-2">
               <Portfolio />
               <Timeline />
               <Contact />
-            </div>
-          </div>
+            </Box>
+
+          </Stack>
         </div>
         <Footer />
       </div>
