@@ -11,10 +11,10 @@ const Intro = () => {
         <br />
         <div className="flex flex-row items-center align-middle gap-3 mx-auto">
            <a href="https://github.com/Xiaokun-Li518" target="_blank">
-             <GitHubIcon sx={{ fontSize:37 }}/> 
+             <GitHubIcon sx={{ fontSize:37, "&:hover": { color: "gray" } }} /> 
             </a>
            <a href="https://www.linkedin.com/in/xiaokun-li-177378209/" target="_blank">
-            <LinkedInIcon sx={{ fontSize:40 }}/>
+            <LinkedInIcon sx={{ fontSize:40, "&:hover": { color: "black" } , color: "#0A66C2"}}/>
            </a>
         </div>
     </div>

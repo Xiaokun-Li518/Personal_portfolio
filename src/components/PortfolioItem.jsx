@@ -6,7 +6,7 @@ const PortfolioItem = ({title, imgUrl, stack, link}) => {
   return (
     <Card sx={{width: {xs:'320px', sm:'320px', md: '358px'}}}>
       <a href={link} target="_blank">
-        <div className="border-2 border-stone-900 dark:border-white hover:border-stone-300 rounded-xl overflow-hidden">
+        <div className="border-2 border-stone-900 dark:bg-stone-900 dark:text-white dark:border-stone-100 dark:hover:border-gray-600 hover:border-stone-300 rounded-xl overflow-hidden">
           <CardMedia image={imgUrl}
             alt="portfolio"
             className="object-cover cursor-pointer"
