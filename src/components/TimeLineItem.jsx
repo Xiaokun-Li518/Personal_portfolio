@@ -10,7 +10,7 @@ const TimeLineItem = ({year, title, duration, details}) => {
                 <h3 className="text-lg font-semibold text-stone-900">
                     {title}
                 </h3>
-                <div className="my-y text-sm font-semibold leading-none text-stone-500 dark:text-white hover:black dark:md:hover:text-white">{duration}</div>
+                <div className="my-y text-sm font-semibold leading-none text-stone-500 hover:black dark:text-white dark:hover:text-white">{duration}</div>
                 <p className="my-2 text-base font-normal text-stone-500 hover:text-black">{details}</p>
             </p>
 

@@ -11,7 +11,7 @@ const svg = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 
 
 const Portfolio = () => {
 return (
-    <div className="flex flex-col items-left">
+    <div className="flex flex-col items-center md:items-start">
         <Title svg={svg} title={'Projects'} />
         <div className="flex flex-col md:flex-row items-left">
          <Stack direction="row" flexWrap="wrap" justifyContent="start" alignItems="start" gap={2} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

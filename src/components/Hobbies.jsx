@@ -9,9 +9,9 @@ const svg = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 
 
 const Hobbies = () => {
   return (
-    <div className="flex flex-col items-right mt-10">
+    <div className="flex flex-col items-center md:items-start mt-10">
         <Title svg={svg} title={'Hobbies'} />
-        <p className="flex gap-2 flex-wrap flex-row items-left text-xs md:text-sm">
+        <p className="flex gap-2 flex-wrap flex-row text-xs md:text-sm">
             {hobby.map(item => (
             <span className="inline-block text-center font-semibold ">
                 <div className="border-2 border-stone-900 dark:border-white rounded-xl px-2 py-1 my-1 w-auto  hover:bg-stone-900 hover:text-white dark:hover:bg-stone-100 dark:hover:text-black">{item}</div>

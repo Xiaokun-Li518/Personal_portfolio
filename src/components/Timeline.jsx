@@ -9,7 +9,7 @@ const svg = <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 
 
 const Timeline = () => {
   return (
-    <div className="flex flex-col items-left justify-center my-20" >
+    <div className="flex flex-col items-center md:items-start my-20" >
         <Title svg={svg} title={'Related Classes Taken'} />
         <div className="w-full md:w-7/12 ">
             <div >

@@ -23,7 +23,7 @@ const Contact = () => {
   }
   return (
     <div className="mb-10 mx-auto">
-      <div className="flex flex-col items-start">
+      <div className="flex flex-col items-center md:items-start">
         <Title svg={svg} title={'Work with me'} />
         <form
           action="https://getform.io/f/3fd4df01-8ca6-46d9-911b-b361258db202"

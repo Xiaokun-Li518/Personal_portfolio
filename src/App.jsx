@@ -72,19 +72,20 @@ function App() {
       <div className="flex flex-col items-center justify-center my-20 px-20 min-h-screen font-inter w-11/12 mx-auto">
         <div>
           <Intro />
-          <Stack sx={{flexDirection:{sx:'column', md:'row'}}} className="grid grid-cols-3 gap-20">
-
-            <Box sx={{ px: {sx: 0, md: 2}}} className="col-span-1 pr-10">
+          <Stack
+            sx={{ flexDirection: { sx: "column", md: "row" } }}
+            className="grid grid-cols-3 gap-20"
+          >
+            <Box sx={{ px: { sx: 0, md: 2 } }} className="col-span-1">
               <TechnicalSkills />
               <Hobbies />
             </Box>
 
-            <Box className="col-span-2">
+            <Box sx={{ px: {sx: 0, md: 2}}} className="col-span-2">
               <Portfolio />
               <Timeline />
               <Contact />
             </Box>
-
           </Stack>
         </div>
         <Footer />
