@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import { Title } from './'
-import EmailIcon from '@mui/icons-material/Email';
 
 const svg = <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -19,6 +18,14 @@ const svg = <svg
 
 const Contact = () => {
   const form = document.querySelector("form");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const validate = () => {
+    return name.length && email.length && message.length;
+  }
+
   function handleSubmit() {
     form.reset();
   }
@@ -34,23 +41,34 @@ const Contact = () => {
           <input
             type="text"
             name="name"
+            id="name"
             placeholder="Name"
+            value={name}
+            onChange={(e)=> setName(e.target.value)}
             className="p-2 bg-transpent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
           />
           <input
             type="text"
+            id="email"
             name="email"
             placeholder="type_your@email.here"
+            value={email}
+            onChange={(e)=> setEmail(e.target.value)}
             className="my-2 p-2  bg-transpent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
           />
           <textarea
             name="message"
+            id="message"
             placeholder="Message"
+            value={message}
+            onChange={(e)=> setMessage(e.target.value)}
             rows="10"
             className="p-2 mb-4 bg-transarent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
           />
           <button
+            id="button"
             type="submit"
+            disabled={!validate()}
             onClick={handleSubmit}
             className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-xl text-white border-2 bg-black dark:border-stone-500 hover:bg-stone-600 dark:hover:bg-black dark:hover:border-white"
           >
