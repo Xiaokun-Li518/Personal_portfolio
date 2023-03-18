@@ -36,9 +36,9 @@ function App() {
         <button
           type="button"
           onClick={handleThemeSwitch}
-          className=" p-5 z-10 top-4 fixed bg-white dark:bg-stone-900 text-xl rounded-full"
+          className="p-5 fixed right-0"
         >
-          {theme === "dark" ? <WbSunnyIcon sx={{"&:hover": { color: "gray" }}}/> : <Brightness2Icon sx={{"&:hover": { color: "gray" }}}/>}
+          {theme === "dark" ? <WbSunnyIcon sx={{"&:hover": { color: "gray" }}}/> : <Brightness2Icon sx={{}}/>}
         </button>
       </div>
       <div className="flex flex-col items-center justify-center my-20 px-20 font-inter w-11/12 mx-auto">
