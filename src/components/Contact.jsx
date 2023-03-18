@@ -1,5 +1,6 @@
 import React from "react";
 import { Title } from './'
+import EmailIcon from '@mui/icons-material/Email';
 
 const svg = <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +25,7 @@ const Contact = () => {
   return (
     <div className="mb-10 mx-auto">
       <div className="flex flex-col items-center md:items-start">
-        <Title svg={svg} title={'Work with me'} />
+       <Title svg={svg} title={'Work with me'} />
         <form
           action="https://getform.io/f/3fd4df01-8ca6-46d9-911b-b361258db202"
           method="POST"
@@ -34,24 +35,24 @@ const Contact = () => {
             type="text"
             name="name"
             placeholder="Name"
-            className="p-2 bg-transpent border-2 rounded-xl focus:outline-none hover:bg-slate-100"
+            className="p-2 bg-transpent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
           />
           <input
             type="text"
             name="email"
-            placeholder="Email"
-            className="my-2 p-2  bg-transpent border-2 rounded-xl focus:outline-none hover:bg-slate-100"
+            placeholder="type_your@email.here"
+            className="my-2 p-2  bg-transpent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
           />
           <textarea
             name="message"
             placeholder="Message"
             rows="10"
-            className="p-2 mb-4 bg-transarent border-2 rounded-xl focus:outline-none hover:bg-slate-100"
+            className="p-2 mb-4 bg-transarent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
           />
           <button
             type="submit"
             onClick={handleSubmit}
-            className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-xl text-white bg-black hover:bg-stone-800 hover:text-stone-100"
+            className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-xl text-white border-2 bg-black dark:border-stone-500 hover:bg-stone-600 dark:hover:bg-black dark:hover:border-white"
           >
             Contact me
           </button>
