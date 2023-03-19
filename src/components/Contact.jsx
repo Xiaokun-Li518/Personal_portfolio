@@ -43,6 +43,7 @@ const Contact = () => {
             name="name"
             id="name"
             placeholder="Name"
+            required
             value={name}
             onChange={(e)=> setName(e.target.value)}
             className="p-2 bg-transpent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
@@ -53,6 +54,7 @@ const Contact = () => {
             name="email"
             placeholder="type_your@email.here"
             value={email}
+            required
             onChange={(e)=> setEmail(e.target.value)}
             className="my-2 p-2  bg-transpent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
           />
@@ -62,13 +64,14 @@ const Contact = () => {
             placeholder="Message"
             value={message}
             onChange={(e)=> setMessage(e.target.value)}
+            required
             rows="10"
             className="p-2 mb-4 bg-transarent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
           />
           <button
             id="button"
             type="submit"
-            disabled={!validate()}
+            // disabled={!validate()}
             onClick={handleSubmit}
             className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-xl text-white border-2 bg-black dark:border-stone-500 hover:bg-stone-600 dark:hover:bg-black dark:hover:border-white"
           >
