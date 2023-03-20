@@ -32,9 +32,9 @@ const DarkMode = () => {
     <div className="flex flex-row justify-between">
       <button type="button" onClick={handleThemeSwitch} className="p-5">
         {theme === "dark" ? (
-          <WbSunnyIcon sx={{ fontSize:{xs:25, md:35}, "&:hover": { color: "gray" } }} />
+          <WbSunnyIcon sx={{ fontSize:{xs:25, md:30}, "&:hover": { color: "gray" } }} />
         ) : (
-          <Brightness2Icon sx={{ fontSize:{xs:25, md:35}, "&:hover": { color: "gray" } }} />
+          <Brightness2Icon sx={{ fontSize:{xs:25, md:30}, "&:hover": { color: "gray" } }} />
         )}
       </button>
     </div>
