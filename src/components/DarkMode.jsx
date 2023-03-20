@@ -29,7 +29,7 @@ const DarkMode = () => {
   }, [theme]);
 
   return (
-    <div className="flex flex-row justify-between">
+    <div className="flex flex-row justify-end">
       <button type="button" onClick={handleThemeSwitch} className="p-5">
         {theme === "dark" ? (
           <WbSunnyIcon sx={{ fontSize:{xs:25, md:30}, "&:hover": { color: "gray" } }} />
