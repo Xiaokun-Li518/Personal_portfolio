@@ -8,9 +8,9 @@ const Intro = () => {
     <div className="flex items-center justify-center flex-col text-center md:text-start pt-20 pb-6">
         <h1 className="text-4xl md:text-5xl mb-1 md:mb-3 font-bold">Xiaokun Li</h1>
         <h3 className="text-sm md:text-xl mb-3 md:mb-6 font-normal">Software Engineer Intern</h3> 
-        <p className="test-sm max-w-xl mb-6 font-semibold"> I am a dedicated and hardworking computer science student who is currently on the hunt for an internship opportunity. I am in third year of my computer science program with a minor in mathematics and have always been passionate about technology and its applications. As I approache graduation, I am keen to gain industry experience through an internship program. I am looking for an opportunity to apply my skills and knowledge in a real-world setting, work alongside experienced professionals, and contribute to meaningful projects.<br/> <a className="font-bold hover:text-stone-500 underline" href="/assets/xiaokunli.pdf" download>Click here to Download Resume <DownloadForOfflineIcon sx={{ "&:hover": { color: "gray" } }}/></a>  <br />(To be Graduated in May 2024).</p>
+        <p className="text-sm max-w-xl mb-6 font-semibold"> I am a dedicated and hardworking computer science student who is currently on the hunt for an internship opportunity. I am in third year of my computer science program with a minor in mathematics and have always been passionate about technology and its applications. As I approache graduation, I am keen to gain industry experience through an internship program. I am looking for an opportunity to apply my skills and knowledge in a real-world setting, work alongside experienced professionals, and contribute to meaningful projects.<br/> <a className="font-bold hover:text-stone-500 underline" href="/assets/xiaokunli.pdf" download>Click here to Download Resume <DownloadForOfflineIcon sx={{ "&:hover": { color: "gray" } }}/></a>  <br />(To be Graduated in May 2024).</p>
         <br />
-        <div className="flex flex-row items-center align-middle gap-3 mx-auto">
+        <div className="flex flex-row items-center gap-3 mx-auto">
            <a href="https://github.com/Xiaokun-Li518" target="_blank">
              <GitHubIcon sx={{ fontSize:{xs:30, md:35}, "&:hover": { color: "gray" } }} /> 
             </a>

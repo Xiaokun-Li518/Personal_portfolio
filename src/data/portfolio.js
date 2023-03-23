@@ -18,6 +18,12 @@ export default [
         link: 'https://keyu-2aiwey7ka-xiaokun-li518.vercel.app'
     },
     {
+        title: 'Discord Bot',
+        imgUrl:'/assets/discord.png',
+        stack: ['Python', 'OpenaiApi', 'DiscordApi'],
+        link: 'https://github.com/Xiaokun-Li518/discord-chatbot'
+    },
+    {
         title: 'My Portfolio',
         imgUrl:'/assets/Portfolio.png',
         stack: ['HTML', 'Tailwind CSS', 'JavaScript', 'React', 'MaterialUI'],
