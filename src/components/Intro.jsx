@@ -14,7 +14,7 @@ const Intro = () => {
            <a href="https://github.com/Xiaokun-Li518" target="_blank">
              <GitHubIcon sx={{ fontSize:{xs:30, md:35}, "&:hover": { color: "gray" } }} /> 
             </a>
-           <a href="https://www.linkedin.com/in/xiaokun-li-177378209/" target="_blank">
+           <a href="https://linkedin.com/in/xiaokunli" target="_blank">
             <LinkedInIcon sx={{ fontSize:{xs:35, md:40}, "&:hover": { color: "black" } , color: "#0A66C2"}}/>
            </a>
         </div>
