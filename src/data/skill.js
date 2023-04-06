@@ -1,1 +1,1 @@
-export default ['HTML', 'CSS', 'SQL', 'Linux', 'Git', 'Python', 'C++', 'Java', 'JavaScript', 'Vim', 'ASP.NET', 'React']
+export default ['HTML', 'CSS', 'SQL', 'Linux', 'Docker', 'Git', 'Python', 'C++', 'C#', 'Java', 'JavaScript', 'Vim', 'ASP.NET', 'React']
