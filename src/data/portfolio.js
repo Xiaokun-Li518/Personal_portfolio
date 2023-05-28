@@ -24,6 +24,12 @@ export default [
         link: 'https://github.com/Xiaokun-Li518/discord-chatbot'
     },
     {
+        title: 'Family Tree',
+        imgUrl:'/assets/Family.png',
+        stack: ['.NET MVC', 'Docker', 'Postgresql'],
+        link: 'https://github.com/sebastianjburman/b461-18042-sp23-project-sebastianjburman-XiaokunLi'
+    },
+    {
         title: 'My Portfolio',
         imgUrl:'/assets/Portfolio.png',
         stack: ['HTML', 'Tailwind CSS', 'JavaScript', 'React', 'MaterialUI'],
