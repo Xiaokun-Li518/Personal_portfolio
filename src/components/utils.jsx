@@ -144,7 +144,7 @@ export const ConfirmDownload = ({
     close
 }) => {
     return (
-        <Modal opened={opened} onClose={close} title="Confirm Download" size="xl" centered transitionProps={{ transition: 'fade', duration: 600, timingFunction: 'linear' }}>
+        <Modal opened={opened} onClose={close} title="Confirm Download" size="xl" centered>
         <p className="mb-3">Are you sure you want to download the Resume?</p>
         <img
           className="mb-3"
