@@ -1,17 +1,13 @@
-import {React, Link, useState} from 'react';
-import { useDisclosure } from '@mantine/hooks';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
+import { React, Link, useState } from "react";
+import { useDisclosure } from "@mantine/hooks";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
 
-import { Modal, Button, Group } from '@mantine/core';
-
-
+import { Modal, Button, Group } from "@mantine/core";
 
 const Intro = () => {
   const [opened, { open, close }] = useDisclosure(false);
-
-
 
   return (
     <div className="flex items-center justify-center flex-col text-center md:text-start pt-20 pb-6">
@@ -43,12 +39,20 @@ const Intro = () => {
       </p>
       <br />
       <div className="flex flex-row items-center gap-3 mx-auto">
-        <a href="https://github.com/Xiaokun-Li518" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/Xiaokun-Li518"
+          target="_blank"
+          rel="noreferrer"
+        >
           <GitHubIcon
             sx={{ fontSize: { xs: 30, md: 35 }, "&:hover": { color: "gray" } }}
           />
         </a>
-        <a href="https://linkedin.com/in/xiaokunli" target="_blank" rel="noreferrer">
+        <a
+          href="https://linkedin.com/in/xiaokunli"
+          target="_blank"
+          rel="noreferrer"
+        >
           <LinkedInIcon
             sx={{
               fontSize: { xs: 35, md: 40 },
@@ -59,11 +63,20 @@ const Intro = () => {
         </a>
       </div>
 
-      <Modal opened={opened} onClose={close} title="Confirm Download">
-        <p className='mb-3'>Are you sure you want to download the Resume?</p>
-        <img className='mb-3' src="/assets/xiaokunli_snapshot.png" alt="Resume Snapshot" />
+      <Modal opened={opened} onClose={close} title="Confirm Download" size="xl">
+        <p className="mb-3">Are you sure you want to download the Resume?</p>
+        <img
+          className="mb-3"
+          src="/assets/xiaokunli_snapshot.png"
+          alt="Resume Snapshot"
+        />
         <Group position="center">
-          <Button className="font-normal text-center inline-block px-8 py-1 w-max text-base rounded-xl text-white border-2 bg-black dark:border-stone-500 hover:bg-stone-600 dark:hover:bg-black dark:hover:border-white" onClick={close}>Cancel</Button>
+          <Button
+            className="font-normal text-center inline-block px-8 py-1 w-max text-base rounded-xl text-white border-2 bg-black dark:border-stone-500 hover:bg-stone-600 dark:hover:bg-black dark:hover:border-white"
+            onClick={close}
+          >
+            Cancel
+          </Button>
           <Button
             className="font-normal text-center inline-block px-8 py-1 w-max text-base rounded-xl text-white border-2 bg-black dark:border-stone-500 hover:bg-stone-600 dark:hover:bg-black dark:hover:border-white"
             component="a"
@@ -78,6 +91,5 @@ const Intro = () => {
     </div>
   );
 };
-
 
 export default Intro;
