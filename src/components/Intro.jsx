@@ -6,6 +6,8 @@ import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
 
 import { Modal, Button, Group } from "@mantine/core";
 
+
+import { ConfirmDownload } from "./utils.jsx";
 const Intro = () => {
   const [opened, { open, close }] = useDisclosure(false);
 
@@ -63,31 +65,10 @@ const Intro = () => {
         </a>
       </div>
 
-      <Modal opened={opened} onClose={close} title="Confirm Download" size="xl">
-        <p className="mb-3">Are you sure you want to download the Resume?</p>
-        <img
-          className="mb-3"
-          src="/assets/xiaokunli_snapshot.png"
-          alt="Resume Snapshot"
-        />
-        <Group position="center">
-          <Button
-            className="font-normal text-center inline-block px-8 py-1 w-max text-base rounded-xl text-white border-2 bg-black dark:border-stone-500 hover:bg-stone-600 dark:hover:bg-black dark:hover:border-white"
-            onClick={close}
-          >
-            Cancel
-          </Button>
-          <Button
-            className="font-normal text-center inline-block px-8 py-1 w-max text-base rounded-xl text-white border-2 bg-black dark:border-stone-500 hover:bg-stone-600 dark:hover:bg-black dark:hover:border-white"
-            component="a"
-            href="/assets/XiaokunLi.pdf"
-            download
-            onClick={close}
-          >
-            Confirm
-          </Button>
-        </Group>
-      </Modal>
+    <ConfirmDownload 
+    opened={opened}
+    close={close}
+    />
     </div>
   );
 };

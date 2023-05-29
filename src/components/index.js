@@ -10,5 +10,6 @@ export { default as Hobbies } from './Hobbies';
 export { default as Title } from './Title';
 export { default as DarkMode } from './DarkMode';
 export { default as MainPage } from './MainPage';
+export { default as ConfirmationModal} from './ConfirmationModal';
 
 
