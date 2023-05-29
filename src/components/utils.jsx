@@ -50,7 +50,7 @@ export const ContactForm = ({
         //   required
           value={query.name}
           onChange={handleParam()}
-          className="p-2 bg-transparent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
+          className="p-2 bg-transparent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100 dark:hover:text-black"
         />
         <label htmlFor="email">Email</label>
         <input
@@ -61,7 +61,7 @@ export const ContactForm = ({
           value={query.email}
         //   required
           onChange={handleParam()}
-          className="my-2 p-2 bg-transparent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
+          className="my-2 p-2 bg-transparent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100 dark:hover:text-black"
         />
         <label htmlFor="message">Message</label>
         <textarea
@@ -72,7 +72,7 @@ export const ContactForm = ({
           onChange={handleParam()}
         //   required
           rows="10"
-          className="p-2 mb-4 bg-transparent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100"
+          className="p-2 mb-4 bg-transparent border-2 border-black hover:border-stone-300 rounded-xl focus:outline-none dark:hover:bg-slate-100 dark:hover:text-black"
         />
         <button
           id="button"
@@ -144,7 +144,7 @@ export const ConfirmDownload = ({
     close
 }) => {
     return (
-        <Modal opened={opened} onClose={close} title="Confirm Download" size="xl" centered>
+        <Modal opened={opened} onClose={close} title="Confirm Download" size="xl" centered transitionProps={{ transition: 'fade', duration: 600, timingFunction: 'linear' }}>
         <p className="mb-3">Are you sure you want to download the Resume?</p>
         <img
           className="mb-3"
