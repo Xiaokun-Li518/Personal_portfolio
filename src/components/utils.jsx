@@ -145,7 +145,6 @@ export const ConfirmDownload = ({
 }) => {
     return (
         <Modal opened={opened} onClose={close} title="Confirm Download" size="xl" centered>
-        <p className="mb-3">Are you sure you want to download the Resume?</p>
         <img
           className="mb-3"
           src="/assets/xiaokunli_snapshot.png"
