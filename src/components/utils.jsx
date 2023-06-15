@@ -137,18 +137,27 @@ export const ConfirmSuccessful = ({
       </Modal>
     )
 } 
-
+import { LoadingPage } from "./Loading";
 
 export const ConfirmDownload = ({
     opened,
     close
 }) => {
+
+    const [isLoading, setIsLoading] = useState(true);
+    const handleImageLoad = () => {
+      setIsLoading(false);
+    }
+
     return (
         <Modal opened={opened} onClose={close} title="Confirm Download" size="xl" centered>
+        {isLoading && <LoadingPage />}
         <img
           className="mb-3"
           src="/assets/xiaokunli_snapshot.png"
           alt="Resume Snapshot"
+          onLoad={handleImageLoad}
+          style={{display:isLoading? 'none':'block'}}
         />
         <Group position="center">
           <Button
