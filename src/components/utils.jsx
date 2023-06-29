@@ -154,7 +154,7 @@ export const ConfirmDownload = ({
         {isLoading && <LoadingPage />}
         <img
           className="mb-3"
-          src="/assets/xiaokunli_snapshot.png"
+          src="/assets/xiaokunli_preview.png"
           alt="Resume Snapshot"
           onLoad={handleImageLoad}
           style={{display:isLoading? 'none':'block'}}
