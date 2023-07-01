@@ -12,10 +12,10 @@ export default [
         link: 'https://sky-net.vercel.app/'
     },
     {
-        title: 'An Event App',
-        imgUrl:'/assets/eventApp.png',
-        stack: ['NextJs', 'HTML', 'CSS', 'JavaScript', 'React'],
-        link: 'https://keyu-2aiwey7ka-xiaokun-li518.vercel.app'
+        title: 'DestiNation',
+        imgUrl:'/assets/DestiNation.png',
+        stack: ['APS.NET WEBAPI', 'HTML', 'CSS', 'JavaScript', 'React', 'RapidAPI', 'Agile'],
+        link: 'https://github.com/IUS-CS/c346-34515-fa22-project-perpetualmotionsquad'
     },
     {
         title: 'Discord Bot',
