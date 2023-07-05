@@ -6,7 +6,6 @@ import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
 
 import { Modal, Button, Group } from "@mantine/core";
 
-
 import { ConfirmDownload } from "./utils.jsx";
 const Intro = () => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -17,15 +16,19 @@ const Intro = () => {
         Xiaokun Li
       </h1>
       <h3 className="text-xl md:text-2xl mb-1 md:mb-3 font-semibold">
-        Software Engineer Intern 
+        Software Engineer Intern
       </h3>
-        <a
-          className="hover:text-stone-500 text-xs md:text-sm font-semibold cursor-pointer mb-3 md:mb-6"
-          onClick={open}
-        >
-          RESUME{" "}
-          <DownloadForOfflineIcon sx={{ "&:hover": { color: "gray" } }} />
-        </a>{" "}
+      <a
+        className="text-xs md:text-sm font-semibold cursor-pointer mb-3 md:mb-6"
+        onClick={open}
+        
+      >
+        RESUME <DownloadForOfflineIcon sx={{ transition: "color 0.3s ease", // Added line for transition
+                                          '&:hover': {  // Added lines for hover effect
+                                            transform: 'scale(1.1)',
+                                            // boxShadow: '5px 5px 15px rgba(0,0,0,0.3)',
+                                          }}} />
+      </a>{" "}
       <p className="text-sm md:text-lg max-w-xl mb-6 font-semibold">
         I am a dedicated and hardworking computer science student who is
         currently on the hunt for an internship opportunity. I am in third year
@@ -35,8 +38,7 @@ const Intro = () => {
         internship program. I am looking for an opportunity to apply my skills
         and knowledge in a real-world setting, work alongside experienced
         professionals, and contribute to meaningful projects.
-        <br />{" "}
-        (To be Graduated in May 2024).
+        <br /> (To be Graduated in May 2024).
         <br />
       </p>
       <br />
@@ -47,7 +49,14 @@ const Intro = () => {
           rel="noreferrer"
         >
           <GitHubIcon
-            sx={{ fontSize: { xs: 30, md: 35 }, "&:hover": { color: "gray" } }}
+            sx={{
+              fontSize: { xs: 30, md: 35 },
+              transition: "color 0.3s ease", // Added line for transition
+              '&:hover': {  // Added lines for hover effect
+                transform: 'scale(1.1)',
+                // boxShadow: '5px 5px 15px rgba(0,0,0,0.3)',
+              }
+            }}
           />
         </a>
         <a
@@ -58,17 +67,17 @@ const Intro = () => {
           <LinkedInIcon
             sx={{
               fontSize: { xs: 35, md: 40 },
-              "&:hover": { color: "black" },
               color: "#0A66C2",
+              transition: "color 0.3s ease", // Added line for transition
+              '&:hover': {  // Added lines for hover effect
+                transform: 'scale(1.1)',
+                // boxShadow: '5px 5px 15px rgba(0,0,0,0.3)',
+              }
             }}
           />
         </a>
       </div>
-
-    <ConfirmDownload 
-    opened={opened}
-    close={close}
-    />
+      <ConfirmDownload opened={opened} close={close} />
     </div>
   );
 };

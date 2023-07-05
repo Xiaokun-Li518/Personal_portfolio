@@ -4,7 +4,7 @@ import { Typography, Card, CardContent, CardMedia } from '@mui/material';
 
 const PortfolioItem = ({title, imgUrl, stack, link}) => {
   return (
-    <Card sx={{width: {xs:'320px', sm:'320px', md: '358px'}, height:{xs:'336px', sm:'336px', md:'336px'}, borderRadius: '15px', boxShadow: 'none', 			transition: 'all 0.3s ease', // Added line for smooth transition
+    <Card sx={{width: {xs:'320px', sm:'320px', md: '358px'}, height:{xs:'336px', sm:'336px', md:'336px'}, borderRadius: '15px', boxShadow: 'none', transition: 'all 0.3s ease', // Added line for smooth transition
     '&:hover': {  // Added lines for hover effect
       transform: 'scale(1.03)',
       boxShadow: '5px 5px 15px rgba(0,0,0,0.3)',
