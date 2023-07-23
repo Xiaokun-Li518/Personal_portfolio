@@ -16,7 +16,7 @@ const Intro = () => {
         Xiaokun Li
       </h1>
       <h3 className="text-xl md:text-2xl mb-1 md:mb-3 font-semibold">
-        Software Engineer Intern
+        Software Engineer 
       </h3>
       <a
         className="text-xs md:text-sm font-semibold cursor-pointer mb-3 md:mb-6"
@@ -31,14 +31,12 @@ const Intro = () => {
       </a>{" "}
       <p className="text-sm md:text-lg max-w-xl mb-6 font-semibold">
         I am a dedicated and hardworking computer science student who is
-        currently on the hunt for an internship opportunity. I am in third year
+        currently on the hunt for an entry-level software development opportunity. I am in last year
         of my computer science program with a minor in mathematics and have
         always been passionate about technology and its applications. As I
-        approache graduation, I am keen to gain industry experience through an
-        internship program. I am looking for an opportunity to apply my skills
-        and knowledge in a real-world setting, work alongside experienced
+        approache graduation, I am keen to gain industry experience through an entry-level software development role, work alongside experienced
         professionals, and contribute to meaningful projects.
-        <br /> (To be Graduated in May 2024).
+        <br /> (Graduating in May 2024).
         <br />
       </p>
       <br />
