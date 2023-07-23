@@ -1,5 +1,7 @@
 import { Intro, Footer, DarkMode, MainPage } from './components';
 
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
         <MainPage />
         <Footer />
       </div>
+      <Analytics />
     </div>
   );
 }
