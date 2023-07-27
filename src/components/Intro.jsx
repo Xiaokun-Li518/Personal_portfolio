@@ -58,7 +58,7 @@ const Intro = () => {
           />
         </a>
         <a
-          href="https://linkedin.com/in/xiaokunli"
+          href="https://www.linkedin.com/in/xiaokunli"
           target="_blank"
           rel="noreferrer"
         >
