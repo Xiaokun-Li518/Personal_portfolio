@@ -169,7 +169,7 @@ export const ConfirmDownload = ({
           <Button
             className="font-normal text-center inline-block px-8 py-1 w-max text-base rounded-xl text-white border-2 bg-black dark:border-stone-500 hover:bg-stone-600 dark:hover:bg-black dark:hover:border-white"
             component="a"
-            href="/assets/XiaokunLi.pdf"
+            href="/assets/xiaokunli.pdf"
             download
             onClick={close}
           >
