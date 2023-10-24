@@ -15,9 +15,9 @@ const Intro = () => {
       <h1 className="text-4xl md:text-5xl mb-1 md:mb-3 font-bold">
         Xiaokun Li
       </h1>
-      <h3 className="text-xl md:text-2xl mb-1 md:mb-3 font-semibold">
+      {/* <h3 className="text-xl md:text-2xl mb-1 md:mb-3 font-semibold">
         Software Engineer 
-      </h3>
+      </h3> */}
       <a
         className="text-xs md:text-sm font-semibold cursor-pointer mb-3 md:mb-6"
         onClick={open}
